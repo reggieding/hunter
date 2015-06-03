@@ -37,6 +37,7 @@
     
     [manager POST:url parameters:dic success:^(AFHTTPRequestOperation *operation, id responseObject) {//登录成功后，操作需要带token
         //3.12	获取收藏列表
+        /*
         NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:@1,@"start",@5,@"limit",nil];
         
         //申明返回的结果是json类型
@@ -59,7 +60,7 @@
         } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
             NSLog(@"unsuccessful %@",error);
         }];
-        
+        */
         //3.11	收藏他人的分享
         /*
         NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:@"1e37407f25f24139a62ed96772528f8f",@"shareId",@1,@"isFavorite",nil];
